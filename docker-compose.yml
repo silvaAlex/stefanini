@@ -7,10 +7,10 @@ services:
       MSSQL_PID: "Developer"
     ports:
       - "1433:1433"
-    networks:
-      - network
-  
-  networks: 
-    network:
-    driver: bridge
-    name: backend
+  api:
+    image: ProductManagementStefanini/api
+    build:
+      context: .
+      dockerfile: ./ProductManagementStefanini/ProductManagementStefanini.API/Dockerfile
+    depends_on:
+      - sqlserver

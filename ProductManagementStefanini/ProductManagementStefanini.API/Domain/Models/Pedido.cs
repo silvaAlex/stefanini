@@ -10,9 +10,11 @@ namespace ProductManagement.API.Domain.Models
         public int Id { get; private set; }
 
         [Required(ErrorMessage = "Nome do cliente é obrigatorio")]
+        [StringLength(60)]
         public string? NomeCliente { get; set; }
 
         [Required(ErrorMessage = "Email do cliente é obrigatorio")]
+        [StringLength(60)]
         public string? EmailCliente { get; set; }
 
         public DateTime DataCriacao { get; set; } = DateTime.Now;

@@ -33,8 +33,11 @@ namespace ProductManagement.API.Infra.Repositories
 
         public void UpdatePedido(Pedido pedido)
         {
-            _context.Update(pedido);
-            _context.SaveChanges();
+            if (pedido is not null)
+            {
+                _context.Update(pedido);
+                _context.SaveChanges();
+            }
         }
     }
 }

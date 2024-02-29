@@ -14,3 +14,6 @@ services:
       dockerfile: ./ProductManagementStefanini/ProductManagementStefanini.API/Dockerfile
     depends_on:
       - sqlserver
+    volumes:
+      - ./init-database.sh:/tmp/init-database.sh
+    command: /bin/bash ./tmp/init-basegeografica.sh

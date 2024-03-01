@@ -9,7 +9,7 @@ namespace ProductManagement.API.Domain.Models
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int Id { get; set; }
+        public int Id { get; private set; }
         public int ProdutoId { get; set; }
 
         public int PedidoId { get; set; }

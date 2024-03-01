@@ -15,5 +15,5 @@ services:
     depends_on:
       - sqlserver
     volumes:
-      - ./init-database.sh:/tmp/init-database.sh
-    command: /bin/bash ./tmp/init-basegeografica.sh
+      - ./init-database.sh:/tmp/init-database.ps1
+    command: /bin/bash ./tmp/init-database.ps1

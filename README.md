@@ -1,29 +1,33 @@
-# Stefanini
+![logo](.github/logo.png)
+
+# Teste Técnico Stefanini (.NET Develoeper)
 
 ## Descrisção do projeto
+Trata-se de uma aplicação que permite a criação de novos pedidos
 
-### Funcionalides
- - Gerenciamento de Pedidos: Permiti a criação, leitura, atualização e exclusão de pedidos.
+![](https://img.shields.io/badge/autor-Alex%20Junior-brightgreen)
+![](https://img.shields.io/github/languages/count/silvaAlex/Stefanini)
+![](https://img.shields.io/github/last-commit/silvaAlex/Stefanini)
 
-### Tecnologias Utilizadas
- - API REST
-    - ASP.NET Core
-    - Entity Framework Core
-    - Swagger (para documentação da API)
 
-### Como rodar aplicação
+## Iniciando
+ - clone este repositorio usando `git clone https://github.com/silvaalex/stefanini.git`
+ - acesse a pasta do projeto via terminal com comando: `cd stefanini`
 
-é necessario ter o dotnet ef tools instalado na máquina
-```shell
-#para instalar rode o comando abaixo
-dotnet tool install --global dotnet-ef
-```
+## Iniciando a aplicação
 
-ao rodar comando abaixo ele irá: 
-   - executar a aplicação
-   - criar o banco de dados
-   - rodar as migrations pelo script init_database.sh
+- ferramentas necessarias para rodar a aplicação:
+   - [Docker](https://www.docker.com/products/docker-desktop/)
+   - abra a docuemenção do [dotnet](https://learn.microsoft.com/en-us/ef/core/cli/dotnet) ou use comando `dotnet tool install --global dotnet-ef`
 
-```shell
-docker-compose up
-```
+- para iniciar a aplicação rodar comando `docker-compose up` 
+   - vai criar a instancia do banco de dados sqlserver
+   - rodar as migrations usando o script `init_database.ps1`
+
+## Funcionalidades
+   - pode criar, atualizar ou deletar um pedido
+
+## CONTATOS
+
+**LinkedIn**: [https://www.linkedin.com/in/](https://www.linkedin.com/in/alexjr-silva/)  
+**Whatsapp**: (31) 99577-3785

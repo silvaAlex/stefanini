@@ -1,4 +1,5 @@
-﻿using ProductManagement.API.Domain.Repositories;
+﻿using Microsoft.EntityFrameworkCore;
+using ProductManagement.API.Domain.Repositories;
 using ProductManagement.API.Domain.Services;
 using ProductManagement.API.Infra.Database;
 using ProductManagement.API.Infra.Repositories;
@@ -10,8 +11,10 @@ namespace ProductManagementStefanini.API.Extensions
     {
         public static void AddRegiterServices(this IServiceCollection services)
         {
-            services.AddScoped<IPedidoService, PedidoServices>();
-            services.AddScoped<ApiDbContext>();
+            services.AddScoped<IPedidoService, PedidoService>();
+            services.AddDbContext<ApiDbContext>(opts =>
+                opts.UseSqlServer(new ConfigurationManager().GetConnectionString("DefaultConnection"))
+            );
             services.AddScoped<IPedidoRepository, PedidoRepository>();
         }
     }

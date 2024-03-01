@@ -44,11 +44,16 @@ namespace ProductManagementStefanini.API.Infra.Response
                 Id = pedido.Id,
                 NomeCliente = pedido.NomeCliente,
                 EmailClient = pedido.EmailCliente,
-                ValorTotal = itemPedidos.Sum(x => x.Quantidade * x.ValorUnitario) ?? 0,
+                ValorTotal = CalcularSomaItemPedido(itemPedidos),
                 ItensPedido = itemPedidos,
             };
 
             return response;
+        }
+
+        public decimal CalcularSomaItemPedido(List<ItemPedidoResponse> pedidos)
+        {
+            return pedidos.Sum(x => x.Quantidade * x.ValorUnitario) ?? 0;
         }
     }
 }

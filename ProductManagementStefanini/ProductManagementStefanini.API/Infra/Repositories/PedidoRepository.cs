@@ -15,19 +15,24 @@ namespace ProductManagement.API.Infra.Repositories
 
         public void AddPedido(Pedido pedido)
         {
-            _context.Add(pedido);
+            _context.Pedidos?.Add(pedido);
             _context.SaveChanges();
         }
 
         public void DeletePedido(int id)
         {
-            _context.Remove(id);
-            _context.SaveChanges();
+            Pedido? pedido = _context.Pedidos?.Where(x => x.Id == id).FirstOrDefault();
+
+            if (pedido is not null)
+            {
+                _context.Pedidos?.Remove(pedido);
+                _context.SaveChanges();
+            }
         }
 
         public Pedido? GetPedidoById(int id)
         {
-            Pedido? pedido = _context.Find<Pedido>(id);
+            Pedido? pedido = _context.Pedidos?.Where(x => x.Id == id)?.FirstOrDefault();
             return pedido;
         }
 

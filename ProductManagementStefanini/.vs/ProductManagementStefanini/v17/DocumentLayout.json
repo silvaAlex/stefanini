@@ -1,12 +1,139 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\user\\Documents\\dev\\.net\\stefanini\\ProductManagementStefanini\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2CF7CCC5-618E-4BA7-ADDD-D0468C5617C1}|ProductManagementStefanini.API.Test\\ProductManagementStefanini.API.Test.csproj|c:\\users\\user\\documents\\dev\\.net\\stefanini\\productmanagementstefanini\\productmanagementstefanini.api.test\\pedidostests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CF7CCC5-618E-4BA7-ADDD-D0468C5617C1}|ProductManagementStefanini.API.Test\\ProductManagementStefanini.API.Test.csproj|solutionrelative:productmanagementstefanini.api.test\\pedidostests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CF7CCC5-618E-4BA7-ADDD-D0468C5617C1}|ProductManagementStefanini.API.Test\\ProductManagementStefanini.API.Test.csproj|c:\\users\\user\\documents\\dev\\.net\\stefanini\\productmanagementstefanini\\productmanagementstefanini.api.test\\helpers\\mockdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CF7CCC5-618E-4BA7-ADDD-D0468C5617C1}|ProductManagementStefanini.API.Test\\ProductManagementStefanini.API.Test.csproj|solutionrelative:productmanagementstefanini.api.test\\helpers\\mockdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDFAA815-544F-40CD-90D2-6C3A1EF22F0D}|ProductManagementStefanini.API\\ProductManagementStefanini.API.csproj|c:\\users\\user\\documents\\dev\\.net\\stefanini\\productmanagementstefanini\\productmanagementstefanini.api\\infra\\response\\pedidoresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDFAA815-544F-40CD-90D2-6C3A1EF22F0D}|ProductManagementStefanini.API\\ProductManagementStefanini.API.csproj|solutionrelative:productmanagementstefanini.api\\infra\\response\\pedidoresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDFAA815-544F-40CD-90D2-6C3A1EF22F0D}|ProductManagementStefanini.API\\ProductManagementStefanini.API.csproj|c:\\users\\user\\documents\\dev\\.net\\stefanini\\productmanagementstefanini\\productmanagementstefanini.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{FDFAA815-544F-40CD-90D2-6C3A1EF22F0D}|ProductManagementStefanini.API\\ProductManagementStefanini.API.csproj|solutionrelative:productmanagementstefanini.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDFAA815-544F-40CD-90D2-6C3A1EF22F0D}|ProductManagementStefanini.API\\ProductManagementStefanini.API.csproj|c:\\users\\user\\documents\\dev\\.net\\stefanini\\productmanagementstefanini\\productmanagementstefanini.api\\extensions\\builderextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDFAA815-544F-40CD-90D2-6C3A1EF22F0D}|ProductManagementStefanini.API\\ProductManagementStefanini.API.csproj|solutionrelative:productmanagementstefanini.api\\extensions\\builderextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDFAA815-544F-40CD-90D2-6C3A1EF22F0D}|ProductManagementStefanini.API\\ProductManagementStefanini.API.csproj|c:\\users\\user\\documents\\dev\\.net\\stefanini\\productmanagementstefanini\\productmanagementstefanini.api\\infra\\database\\apidbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDFAA815-544F-40CD-90D2-6C3A1EF22F0D}|ProductManagementStefanini.API\\ProductManagementStefanini.API.csproj|solutionrelative:productmanagementstefanini.api\\infra\\database\\apidbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDFAA815-544F-40CD-90D2-6C3A1EF22F0D}|ProductManagementStefanini.API\\ProductManagementStefanini.API.csproj|c:\\users\\user\\documents\\dev\\.net\\stefanini\\productmanagementstefanini\\productmanagementstefanini.api\\infra\\repositories\\pedidorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDFAA815-544F-40CD-90D2-6C3A1EF22F0D}|ProductManagementStefanini.API\\ProductManagementStefanini.API.csproj|solutionrelative:productmanagementstefanini.api\\infra\\repositories\\pedidorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PedidoResponse.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\dev\\.net\\stefanini\\ProductManagementStefanini\\ProductManagementStefanini.API\\Infra\\Response\\PedidoResponse.cs",
+              "RelativeDocumentMoniker": "ProductManagementStefanini.API\\Infra\\Response\\PedidoResponse.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\dev\\.net\\stefanini\\ProductManagementStefanini\\ProductManagementStefanini.API\\Infra\\Response\\PedidoResponse.cs",
+              "RelativeToolTip": "ProductManagementStefanini.API\\Infra\\Response\\PedidoResponse.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAWwA0AAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-01T12:38:32.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MockDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\dev\\.net\\stefanini\\ProductManagementStefanini\\ProductManagementStefanini.API.Test\\Helpers\\MockDbContext.cs",
+              "RelativeDocumentMoniker": "ProductManagementStefanini.API.Test\\Helpers\\MockDbContext.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\dev\\.net\\stefanini\\ProductManagementStefanini\\ProductManagementStefanini.API.Test\\Helpers\\MockDbContext.cs",
+              "RelativeToolTip": "ProductManagementStefanini.API.Test\\Helpers\\MockDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-01T12:12:32.538Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PedidosTests.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\dev\\.net\\stefanini\\ProductManagementStefanini\\ProductManagementStefanini.API.Test\\PedidosTests.cs",
+              "RelativeDocumentMoniker": "ProductManagementStefanini.API.Test\\PedidosTests.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\dev\\.net\\stefanini\\ProductManagementStefanini\\ProductManagementStefanini.API.Test\\PedidosTests.cs",
+              "RelativeToolTip": "ProductManagementStefanini.API.Test\\PedidosTests.cs",
+              "ViewState": "AQIAADkAAAAAAAAAAAAYwEQAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-01T12:11:43.729Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\dev\\.net\\stefanini\\ProductManagementStefanini\\ProductManagementStefanini.API\\appsettings.json",
+              "RelativeDocumentMoniker": "ProductManagementStefanini.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\user\\Documents\\dev\\.net\\stefanini\\ProductManagementStefanini\\ProductManagementStefanini.API\\appsettings.json",
+              "RelativeToolTip": "ProductManagementStefanini.API\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-01T12:10:08.615Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BuilderExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\dev\\.net\\stefanini\\ProductManagementStefanini\\ProductManagementStefanini.API\\Extensions\\BuilderExtensions.cs",
+              "RelativeDocumentMoniker": "ProductManagementStefanini.API\\Extensions\\BuilderExtensions.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\dev\\.net\\stefanini\\ProductManagementStefanini\\ProductManagementStefanini.API\\Extensions\\BuilderExtensions.cs",
+              "RelativeToolTip": "ProductManagementStefanini.API\\Extensions\\BuilderExtensions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-01T12:04:02.528Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ApiDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\dev\\.net\\stefanini\\ProductManagementStefanini\\ProductManagementStefanini.API\\Infra\\Database\\ApiDbContext.cs",
+              "RelativeDocumentMoniker": "ProductManagementStefanini.API\\Infra\\Database\\ApiDbContext.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\dev\\.net\\stefanini\\ProductManagementStefanini\\ProductManagementStefanini.API\\Infra\\Database\\ApiDbContext.cs",
+              "RelativeToolTip": "ProductManagementStefanini.API\\Infra\\Database\\ApiDbContext.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAzwAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-01T06:41:02.215Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PedidoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\dev\\.net\\stefanini\\ProductManagementStefanini\\ProductManagementStefanini.API\\Infra\\Repositories\\PedidoRepository.cs",
+              "RelativeDocumentMoniker": "ProductManagementStefanini.API\\Infra\\Repositories\\PedidoRepository.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\dev\\.net\\stefanini\\ProductManagementStefanini\\ProductManagementStefanini.API\\Infra\\Repositories\\PedidoRepository.cs",
+              "RelativeToolTip": "ProductManagementStefanini.API\\Infra\\Repositories\\PedidoRepository.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAIA+wB8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-01T06:35:43.339Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

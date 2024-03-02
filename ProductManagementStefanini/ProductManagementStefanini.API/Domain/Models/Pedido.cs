@@ -7,7 +7,8 @@ namespace ProductManagement.API.Domain.Models
     public class Pedido
     {
         [Key]
-        public int Id { get; private set; }
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int Id { get; set; }
 
         [Required(ErrorMessage = "Nome do cliente é obrigatorio")]
         [StringLength(60)]
@@ -18,7 +19,7 @@ namespace ProductManagement.API.Domain.Models
         public string? EmailCliente { get; set; }
 
         public DateTime DataCriacao { get; set; } = DateTime.Now;
-        public bool? Pago { get; set; }
-        public ICollection<ItemPedido> Pedidos { get; set; } = new List<ItemPedido>();
+        public bool Pago { get; set; } = false;
+        public ICollection<ItemPedido>? Pedidos { get; set; }
     }
 }

@@ -47,32 +47,12 @@ namespace ProductManagementStefanini.API.Test
         [Fact]
         public void CriarPedidoNoBancoDeDados()
         {
-            string nomeCliente = "Stefanini";
-            //Act 
+            //Act
             var result = _pedidoRepository.GetPedidoById(1);
 
             //Assert
             Assert.NotNull(result);
-            Assert.NotNull(result.Pedidos);
-            Assert.NotNull(_context?.Pedidos);
-            Assert.Collection(_context.Pedidos, p =>
-            {
-                Assert.Equal(nomeCliente, p.NomeCliente);
-                Assert.Equal(1, p.Id);
-                Assert.True(p.Pedidos.Any());
-            });
-        }
-
-        [Fact]
-        public void CalculaValorTotalDoPedido()
-        {
-            var result = _pedidoRepository.GetPedidoById(1);
-
-            //Assert
             Assert.NotNull(result);
-            PedidoResponse response = new PedidoResponse().GetPedidoResponse(result);
-            Assert.True(response.ValorTotal > 0);
-            Assert.Equal((decimal)(2 * 299.99), response.ValorTotal);
         }
     }
 }

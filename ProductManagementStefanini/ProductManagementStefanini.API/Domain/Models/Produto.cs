@@ -10,7 +10,7 @@ namespace ProductManagement.API.Domain.Models
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Column(Order = 0)]
-        public int Id { get; private set; }
+        public int Id { get; set; }
         [Required(ErrorMessage = "Nome Produto é obrigatorio")]
         [StringLength(20)]
         public string? NomeProduto { get; set; }

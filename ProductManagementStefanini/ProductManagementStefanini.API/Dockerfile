@@ -9,7 +9,8 @@ FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 COPY ["ProductManagementStefanini.API/ProductManagementStefanini.API.csproj", "ProductManagementStefanini.API/"]
-RUN dotnet restore "./ProductManagementStefanini.API/ProductManagementStefanini.API.csproj"
+COPY ["ProductManagementStefanini.API/appsettings.json","ProductManagementStefanini.API/"]
+RUN dotnet restore "ProductManagementStefanini.API/ProductManagementStefanini.API.csproj"
 COPY . .
 WORKDIR "/src/ProductManagementStefanini.API"
 RUN dotnet build "./ProductManagementStefanini.API.csproj" -c $BUILD_CONFIGURATION -o /app/build

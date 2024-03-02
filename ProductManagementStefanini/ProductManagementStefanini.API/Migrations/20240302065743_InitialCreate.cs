@@ -18,7 +18,7 @@ namespace ProductManagementStefanini.API.Migrations
                     NomeCliente = table.Column<string>(type: "nvarchar(60)", maxLength: 60, nullable: false),
                     EmailCliente = table.Column<string>(type: "nvarchar(60)", maxLength: 60, nullable: false),
                     DataCriacao = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    Pago = table.Column<bool>(type: "bit", nullable: true)
+                    Pago = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -45,9 +45,9 @@ namespace ProductManagementStefanini.API.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
+                    Quantidade = table.Column<int>(type: "int", nullable: false),
                     ProdutoId = table.Column<int>(type: "int", nullable: false),
-                    PedidoId = table.Column<int>(type: "int", nullable: false),
-                    Quantidade = table.Column<int>(type: "int", nullable: false)
+                    PedidoId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {

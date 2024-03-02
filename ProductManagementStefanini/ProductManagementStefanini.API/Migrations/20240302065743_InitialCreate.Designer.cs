@@ -12,7 +12,7 @@ using ProductManagement.API.Infra.Database;
 namespace ProductManagementStefanini.API.Migrations
 {
     [DbContext(typeof(ApiDbContext))]
-    [Migration("20240229053304_InitialCreate")]
+    [Migration("20240302065743_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -71,7 +71,7 @@ namespace ProductManagementStefanini.API.Migrations
                         .HasMaxLength(60)
                         .HasColumnType("nvarchar(60)");
 
-                    b.Property<bool?>("Pago")
+                    b.Property<bool>("Pago")
                         .HasColumnType("bit");
 
                     b.HasKey("Id");
@@ -105,7 +105,7 @@ namespace ProductManagementStefanini.API.Migrations
 
             modelBuilder.Entity("ProductManagement.API.Domain.Models.ItemPedido", b =>
                 {
-                    b.HasOne("ProductManagement.API.Domain.Models.Pedido", null)
+                    b.HasOne("ProductManagement.API.Domain.Models.Pedido", "Pedido")
                         .WithMany("Pedidos")
                         .HasForeignKey("PedidoId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -116,6 +116,8 @@ namespace ProductManagementStefanini.API.Migrations
                         .HasForeignKey("ProdutoId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Pedido");
 
                     b.Navigation("Produto");
                 });

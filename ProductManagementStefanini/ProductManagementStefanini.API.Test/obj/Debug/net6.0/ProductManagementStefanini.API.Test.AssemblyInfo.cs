@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProductManagementStefanini.API.Test")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ab399c8c195ef233ceb0b9f72e75c4244da752ee")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9c97cf3f9f3be214049c937db3cb7ce53b638b8f")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProductManagementStefanini.API.Test")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProductManagementStefanini.API.Test")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

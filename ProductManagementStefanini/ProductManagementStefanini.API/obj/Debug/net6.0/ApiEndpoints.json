@@ -1,6 +1,22 @@
 [
   {
     "ContainingType": "ProductManagementStefanini.API.Controllers.PedidoController",
+    "Method": "PostPedido",
+    "RelativePath": "api/Pedido",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pedido",
+        "Type": "ProductManagement.API.Domain.Models.Pedido",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProductManagementStefanini.API.Controllers.PedidoController",
     "Method": "GetPedido",
     "RelativePath": "api/Pedido/{id}",
     "HttpMethod": "GET",
@@ -9,7 +25,54 @@
     "Parameters": [
       {
         "Name": "id",
-        "Type": "",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ProductManagementStefanini.API.Infra.Response.PedidoResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProductManagementStefanini.API.Controllers.PedidoController",
+    "Method": "PutPedido",
+    "RelativePath": "api/Pedido/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "pago",
+        "Type": "System.Boolean",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProductManagementStefanini.API.Controllers.PedidoController",
+    "Method": "DeletePedidoAsync",
+    "RelativePath": "api/Pedido/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],

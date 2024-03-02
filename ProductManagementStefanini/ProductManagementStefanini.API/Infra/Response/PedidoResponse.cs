@@ -45,6 +45,7 @@ namespace ProductManagementStefanini.API.Infra.Response
                 NomeCliente = pedido.NomeCliente,
                 EmailClient = pedido.EmailCliente,
                 ValorTotal = CalcularSomaItemPedido(itemPedidos),
+                Pago = pedido.Pago,
                 ItensPedido = itemPedidos,
             };
 

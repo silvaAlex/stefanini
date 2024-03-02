@@ -4,9 +4,9 @@ namespace ProductManagement.API.Domain.Repositories
 {
     public interface IPedidoRepository
     {
-        Pedido? GetPedidoById(int id);
-        void AddPedido(Pedido pedido);
-        void UpdatePedido(Pedido pedido);
-        void DeletePedido(int id);
+        Task<Pedido?> GetPedidoById(int id);
+        Task<bool> AddPedido(Pedido pedido);
+        Task<bool> UpdatePedido(Pedido pedido);
+        Task<bool> DeletePedido(Pedido pedido);
     }
 }

@@ -13,13 +13,35 @@ namespace ProductManagement.API.Infra.Services
             _pedidoRepository = pedidoRepository;
         }
 
-        public void AddPedido(Pedido pedido) => _pedidoRepository.AddPedido(pedido);
-        
-        public void DeletePedido(int id) => _pedidoRepository.DeletePedido(id);
+        public Task<bool> AddPedido(Pedido pedido)
+        {
+            return _pedidoRepository.AddPedido(pedido);
+        }
 
-        public Pedido? GetPedidoById(int id) => _pedidoRepository.GetPedidoById(id);
-       
-        public void UpdatePedido(Pedido pedido) => _pedidoRepository.UpdatePedido(pedido);
-       
+        public async Task<bool> DeletePedido(int id)
+        {
+            var pedido = await _pedidoRepository.GetPedidoById(id);
+
+            if(pedido is null)
+                return false;
+            var result = await _pedidoRepository.DeletePedido(pedido);
+
+            return result;
+        }
+
+        public async Task<Pedido?> GetPedidoById(int id)
+        {
+            return await _pedidoRepository.GetPedidoById(id);
+        }
+
+        public async Task<bool> UpdatePedido(Pedido pedido)
+        {
+            if (pedido is null)
+                return false;
+
+            var result = await _pedidoRepository.UpdatePedido(pedido);
+
+            return result;
+        }
     }
 }

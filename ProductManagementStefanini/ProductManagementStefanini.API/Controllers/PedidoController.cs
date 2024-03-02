@@ -17,56 +17,60 @@ namespace ProductManagementStefanini.API.Controllers
         }
 
         [HttpGet("{id}")]
-        public ActionResult<PedidoResponse> GetPedido(int id)
+        public async Task<ActionResult<PedidoResponse>> GetPedido(int id)
         {
-            PedidoResponse result = new();
-            Pedido? pedido = _pedidoService.GetPedidoById(id);
-            if (pedido == null)
+            var result = await _pedidoService.GetPedidoById(id);
+
+            if (result is not null)
             {
-                return NotFound();
+                var response = new PedidoResponse().GetPedidoResponse(result);
+
+                return Ok(response);
             }
 
-            return result.GetPedidoResponse(pedido);
+            return NotFound($"Pedido com {id} não foi encontrado");
         }
 
         [HttpPut("{id}")]
-        public ActionResult PutPedido(int id, [FromBody] bool pago = true)
+        public async Task<IActionResult> PutPedido(int id, [FromBody] bool pago = true)
         {
-            Pedido? pedido = _pedidoService.GetPedidoById(id);
+            if (!ModelState.IsValid)
+                return BadRequest("Model not valid");
 
-            if (pedido is not null)
-            {
-                if (id != pedido.Id)
-                {
-                    return BadRequest();
-                }
+            var result = await _pedidoService.GetPedidoById(id);
 
-                pedido.Pago = pago;
-            }
-            else
+            if (result is not null)
             {
-                return NotFound();
+                result.Pago = pago;
+
+                await _pedidoService.UpdatePedido(result);
+
+                return Ok("Pedido atualizado");
             }
 
-            _pedidoService.UpdatePedido(pedido);
-
-            return Ok();
+            return BadRequest("Erro ao atualizar o pedido");
         }
 
         [HttpDelete("{id}")]
-        public ActionResult DeletePedido(int id)
+        public async Task<ActionResult> DeletePedidoAsync(int id)
         {
-            _pedidoService?.DeletePedido(id);
+            var result = await _pedidoService.DeletePedido(id);
 
-            return Ok();
+            if (result) return Ok($"Pedido com {id} deletado com sucesso");
+
+            return BadRequest($"Pedido com {id} não pode ser removido ou não foi encontrado");
         }
 
         [HttpPost]
-        public ActionResult PostPedido([FromBody] Pedido pedido)
+        public async Task<IActionResult> PostPedido([FromBody] Pedido pedido)
         {
-            _pedidoService.AddPedido(pedido);
+            if (!ModelState.IsValid)
+                return BadRequest("Model not valid");
 
-            return CreatedAtAction("GetPedido", new { id = pedido.Id }, pedido);
+            var result = await _pedidoService.AddPedido(pedido);
+
+            if (result) return Ok("Pedido criado com sucesso");
+            return BadRequest("Erro ao criar o pedido");
         }
     }
 }

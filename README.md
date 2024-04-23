@@ -29,5 +29,5 @@ e iniciar a aplicação
 
 ## CONTATOS
 
-**LinkedIn**: [https://www.linkedin.com/in/](https://www.linkedin.com/in/alexjr-silva/)  
+**LinkedIn**: [alex junior](https://www.linkedin.com/in/alexjr-silva/)  
 **Whatsapp**: (31) 99577-3785

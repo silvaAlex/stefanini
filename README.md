@@ -26,8 +26,3 @@ e iniciar a aplicação
 
 ## Funcionalidades
    - pode criar, buscar, atualizar ou deletar um pedido
-
-## CONTATOS
-
-**LinkedIn**: [alex junior](https://www.linkedin.com/in/alexjr-silva/)  
-**Whatsapp**: (31) 99577-3785

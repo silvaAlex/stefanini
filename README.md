@@ -1,6 +1,6 @@
 ![logo](.github/logo.png)
 
-# Teste Técnico Stefanini (.NET Develoeper)
+# Teste Técnico Stefanini (.NET Developer)
 
 ## Descrisção do projeto
 Trata-se de uma aplicação que permite a criação de novos pedidos
